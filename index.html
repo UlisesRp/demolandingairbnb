@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reserva directa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo" id="brand"></div><a class="ghost" id="wa-top" href="#">Escríbenos</a></header>
+
+<main>
+<section class="hero">
+<div>
+<span class="tag">Demo con fechas de ejemplo</span>
+<h1>Reserva directo con tu anfitriona</h1>
+<p class="lead">Elige tu departamento, marca tus fechas y confirma por WhatsApp. Sin cuentas ni formularios largos.</p>
+<div class="units" id="units" role="group" aria-label="Departamentos"></div>
+</div>
+
+<div class="card" id="booking">
+<div class="cal-h">
+<button class="nav" id="prev" aria-label="Mes anterior">&#8249;</button>
+<h2 id="month"></h2>
+<button class="nav" id="next" aria-label="Mes siguiente">&#8250;</button>
+</div>
+<p class="sub" id="uname"></p>
+<div class="grid" id="dows"></div>
+<div class="grid" id="days"></div>
+<div class="legend"><span><i style="background:var(--brand)"></i>Tu selección</span><span><i style="background:var(--busy)"></i>Ocupado</span></div>
+<div class="sum">
+<div class="row"><span id="range">Elige tu llegada y tu salida</span><span id="nights"></span></div>
+<div class="row"><span class="sub" id="ppn"></span><span class="total" id="total"></span></div>
+<a class="cta" id="wa" role="button" aria-disabled="true" href="#">Reservar por WhatsApp</a>
+<p class="note">Las fechas ocupadas se actualizan solas con tu calendario de Airbnb.</p>
+</div>
+</div>
+</section>
+
+<section class="how" aria-label="Cómo reservar">
+<div><h3>Elige tu depto</h3><p>Cada departamento tiene su propio calendario y su precio por noche.</p></div>
+<div><h3>Marca tus fechas</h3><p>Ves al instante cuántas noches son y cuánto cuesta tu estancia.</p></div>
+<div><h3>Confirma por WhatsApp</h3><p>Te llega el mensaje ya escrito. Tu anfitriona te responde con los datos de pago.</p></div>
+</section>
+</main>
+<footer id="footer"></footer>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
